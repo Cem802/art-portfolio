@@ -20,14 +20,14 @@ const Navbar = () => {
   return (
     <nav className="absolute w-full p-6 z-50">
         <div className="container mx-auto flex items-center justify-between">
-            <div className="text-2xl font-bold text-red-800 z-50">
+            <div className="text-2xl font-bold z-50">
                 <Link href="/">
                     <Image src="/images/logo4.png" alt="logo" width={100} height={100} />
                 </Link>
             </div>
             <div className='relative z-50'>
                 <div className="md:hidden" onClick={toggleMenu}>
-                    <button className="text-gray-800 focus:outline-none">
+                    <button className="text-white focus:outline-none">
                         {isOpen ? (
                             <FontAwesomeIcon icon={faClose} size='xl' />
                         ) : (
@@ -57,7 +57,7 @@ const Navbar = () => {
                         </Link>
                     </li>
                     <li className='md:hidden'>
-                        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className="text-gray-800 hover:text-[#9FCC2E]">
+                        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#9FCC2E]">
                             <FontAwesomeIcon icon={faInstagram} size='xl' />
                         </a>
                     </li>
