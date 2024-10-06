@@ -4,6 +4,7 @@ import { Spicy_Rice } from "next/font/google"
 
 import { config } from '@fortawesome/fontawesome-svg-core'
 import '@fortawesome/fontawesome-svg-core/styles.css'
+import Navbar from "@/components/Navbar";
 config.autoAddCss = false
 
 const poppins = Spicy_Rice({
@@ -28,6 +29,7 @@ export default function RootLayout({
       <body
         className={poppins.className}
       >
+        <Navbar />
         {children}
       </body>
     </html>

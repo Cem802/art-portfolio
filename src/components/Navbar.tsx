@@ -18,14 +18,14 @@ const Navbar = () => {
   const isActive = (path: string) => pathname === path;
 
   return (
-    <nav className="p-12">
+    <nav className="absolute p-12 w-screen">
         <div className="container mx-auto flex items-center justify-between">
             <div className="text-2xl font-bold text-red-800 z-50">
                 <Link href="/">
                     <Image src="/images/logo4.png" alt="logo" width={100} height={100} />
                 </Link>
             </div>
-            <div className='relative'>
+            <div className='relative z-50'>
                 <div className="md:hidden" onClick={toggleMenu}>
                     <button className="text-gray-800 focus:outline-none">
                         {isOpen ? (

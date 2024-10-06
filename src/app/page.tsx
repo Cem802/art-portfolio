@@ -33,9 +33,8 @@ export default function Home() {
             backgroundImage: `url('/images/background.jpg')`,
           }}
         />
-        <Navbar />
         <div className="p-4">
-          <div className="w-full h-96 flex flex-col justify-center items-center">
+          <div className="w-full h-screen flex flex-col justify-center items-center">
             <h1 className="text-[150px] m-5 text-[#9FCC2E] z-50">Art by Sera</h1>
             <p className="text-2xl text-white z-50">Digital Artist</p>
           </div>
