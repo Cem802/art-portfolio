@@ -7,7 +7,7 @@ import '@fortawesome/fontawesome-svg-core/styles.css'
 import Navbar from "@/components/Navbar";
 config.autoAddCss = false
 
-const poppins = Spicy_Rice({
+const spicyrice = Spicy_Rice({
   weight: ['400'],
   style: ['normal'],
   subsets: ['latin'],
@@ -27,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={poppins.className}
+        className={spicyrice.className}
       >
         <Navbar />
         {children}
