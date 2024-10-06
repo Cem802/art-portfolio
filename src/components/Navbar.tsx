@@ -57,7 +57,7 @@ const Navbar = () => {
                         </Link>
                     </li>
                     <li className='md:hidden'>
-                        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#9FCC2E]">
+                        <a href="https://www.instagram.com/aresaiart" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#9FCC2E]">
                             <FontAwesomeIcon icon={faInstagram} size='xl' />
                         </a>
                     </li>
@@ -65,7 +65,7 @@ const Navbar = () => {
             </div>
             <ul className='hidden md:block z-50'>
                 <li>
-                    <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#9FCC2E]">
+                    <a href="https://www.instagram.com/aresaiart" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#9FCC2E]">
                         <FontAwesomeIcon icon={faInstagram} size='2x' />
                     </a>
                 </li>
