@@ -20,7 +20,7 @@ const Navbar = () => {
   return (
     <nav className="p-12">
         <div className="container mx-auto flex items-center justify-between">
-            <div className="text-2xl font-bold text-red-800">
+            <div className="text-2xl font-bold text-red-800 z-50">
                 <Link href="/">
                     <Image src="/images/logo4.png" alt="logo" width={100} height={100} />
                 </Link>
@@ -63,7 +63,7 @@ const Navbar = () => {
                     </li>
                 </ul>
             </div>
-            <ul className='hidden md:block'>
+            <ul className='hidden md:block z-50'>
                 <li>
                     <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#9FCC2E]">
                         <FontAwesomeIcon icon={faInstagram} size='2x' />
