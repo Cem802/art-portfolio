@@ -27,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={spicyrice.className}
+        className={`${spicyrice.className} bg-black text-white`}
       >
         <Navbar />
         {children}

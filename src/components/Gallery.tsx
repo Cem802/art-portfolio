@@ -1,5 +1,6 @@
 'use client'
 import Image from 'next/image';
+import { useRouter } from 'next/navigation';
 import { useState, useEffect, useRef, ForwardedRef, forwardRef, MutableRefObject } from 'react';
 
 const Gallery = ({ images }: { images: any }) => {
@@ -46,6 +47,7 @@ const Gallery = ({ images }: { images: any }) => {
 
 const Item = forwardRef<HTMLDivElement, { image: any }>(({ image }, ref) => {
   const [hover, setHover] = useState(false);
+  const router = useRouter();
 
   return (
     <div
@@ -53,8 +55,9 @@ const Item = forwardRef<HTMLDivElement, { image: any }>(({ image }, ref) => {
       className={`relative overflow-hidden cursor-pointer opacity-0 ${
         image.customClass ? image.customClass : ''
       }`}
-      onMouseEnter={() => setHover(true)}
+      onMouseEnter={() => image.title && setHover(true)}
       onMouseLeave={() => setHover(false)}
+      onClick={() => image.project && router.push(`/projects/${image.project}`)}
     >
       <Image
         src={image.src}
