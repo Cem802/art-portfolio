@@ -9,12 +9,12 @@ const config: Config = {
   theme: {
     extend: {
       animation: {
-        fadeIn: "fadeIn 1.5s ease-in-out",
+        fadeIn: "fadeIn 1s ease-in-out",
       },
       keyframes: {
         fadeIn: {
-          "0%": { scale: '0.8' },
-          "100%": { scale: '1' },
+          "0%": { opacity: '0', transform: 'translateY(200px)' },
+          "100%": { opacity: '1', transform: 'translateY(0px)' },
         },
       },
       colors: {
