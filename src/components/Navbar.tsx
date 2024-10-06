@@ -18,7 +18,7 @@ const Navbar = () => {
   const isActive = (path: string) => pathname === path;
 
   return (
-    <nav className="absolute p-12 w-screen">
+    <nav className="absolute w-full p-6 z-50">
         <div className="container mx-auto flex items-center justify-between">
             <div className="text-2xl font-bold text-red-800 z-50">
                 <Link href="/">
@@ -42,7 +42,7 @@ const Navbar = () => {
                         </Link>
                     </li>
                     <li>
-                        <Link href="#work">
+                        <Link href="/#work">
                             <p className={`text-white hover:text-[#9FCC2E] ${isActive('#work') ? 'border-b-2 border-[#9FCC2E]' : ''}`}>WORK</p>
                         </Link>
                     </li>

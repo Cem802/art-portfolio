@@ -12,7 +12,7 @@ const images = [
 function Work() {
   return (
     <div id='work' className='p-4'>
-        <div className='w-full flex justify-center items-center p-10'>
+        <div className='w-full flex justify-center items-center p-20'>
             <h1 className="text-4xl text-center">Design Work and Illustration</h1>
         </div>
         <Gallery images={images} />
