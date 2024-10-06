@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Poppins } from "next/font/google"
+import { Spicy_Rice } from "next/font/google"
 
 import { config } from '@fortawesome/fontawesome-svg-core'
 import '@fortawesome/fontawesome-svg-core/styles.css'
 config.autoAddCss = false
 
-const poppins = Poppins({
-  weight: ['400', '700'],
-  style: ['normal', 'italic'],
+const poppins = Spicy_Rice({
+  weight: ['400'],
+  style: ['normal'],
   subsets: ['latin'],
   display: 'swap',
 })
