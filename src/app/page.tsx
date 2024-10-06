@@ -1,10 +1,11 @@
 'use client'
 import Navbar from "@/components/Navbar";
 import Work from "@/components/Work";
+import Image from "next/image";
 import { useEffect, useRef, RefObject } from "react";
 
 export default function Home() {
-  const parallaxRef = useRef<HTMLDivElement>(null);
+  const parallaxRef = useRef<HTMLImageElement>(null);
 
   useEffect(() => {
     const handleScroll = () => {

@@ -64,9 +64,8 @@ const Item = forwardRef<HTMLDivElement, { image: any }>(({ image }, ref) => {
         className="object-cover w-full h-full"
       />
       {hover && (
-        <div className='absolute w-full h-full p-4 bg-black bg-opacity-80'>
+        <div className='absolute w-full h-full p-4 bg-black bg-opacity-80 flex justify-center items-center'>
           <h1 className="text-white text-2xl font-bold">Title</h1>
-          <p className="text-white">Description</p>
         </div>
       )}
     </div>

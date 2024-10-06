@@ -31,6 +31,11 @@ export default function RootLayout({
       >
         <Navbar />
         {children}
+        <footer>
+          <div className="w-full text-right p-8 bg-black">
+            <p className="text-white">Sera Kirciltepeli</p>
+          </div>
+        </footer>
       </body>
     </html>
   );
