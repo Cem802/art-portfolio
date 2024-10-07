@@ -1,6 +1,7 @@
 // Script to automatically set image paths for projects
 const fs = require('fs');
 const path = require('path');
+const sizeOf = require('image-size');
 
 // Path to the directory containing project image folders
 const imagesBasePath = path.join('public', 'images');
@@ -21,12 +22,19 @@ projects = projects.map((project) => {
     if (fs.existsSync(projectDir)) {
         const imageFiles = fs.readdirSync(projectDir)
             .filter(file => ['.jpg', '.jpeg', '.png', '.gif'].includes(path.extname(file).toLowerCase()))
-            .map(file => `/images/${project.name}/${file}`);
+            .map(file => {
+                const imagePath = path.join(projectDir, file);
+                const dimensions = sizeOf(imagePath);
+                return {
+                    src: `/images/${project.name}/${file}`,
+                    aspectRatio: dimensions.width / dimensions.height
+                };
+            });
         project.images = imageFiles;
 
         // Set background image if not already set
         if (!project.background && imageFiles.length > 0) {
-            project.background = imageFiles[0];
+            project.background = imageFiles[0].src;
         }
     } else {
         console.warn(`Directory for project ${project.name} not found at ${projectDir}`);
