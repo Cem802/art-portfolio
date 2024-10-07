@@ -1,6 +1,11 @@
 'use client'
 import projects from '@/data/projects';
 import Gallery from '@/components/Gallery';
+import { title } from 'process';
+
+function randomIntFromInterval(min: number, max: number) { // min and max included 
+  return Math.floor(Math.random() * (max - min + 1) + min);
+}
 
 const ProjectPage = ({ params }: { params: { name: string } }) => {
   // Find the project data based on the dynamic route parameter
@@ -15,7 +20,8 @@ const ProjectPage = ({ params }: { params: { name: string } }) => {
 
   const images = project.images.map((image: any, index: number) => {
     // Determine the column span for the current image
-    let colSpan = Math.floor(Math.random() * 4) + 2; // Random col-span between 2 and 5
+    let colSpan = randomIntFromInterval(2, 6)
+
     
     // If the current column span exceeds the remaining columns in the row,
     // adjust it to fit perfectly in the row
@@ -24,7 +30,6 @@ const ProjectPage = ({ params }: { params: { name: string } }) => {
     }
 
     // Save the current span and decrease the remaining columns
-    const currentSpan = colSpan;
     remainingCols -= colSpan;
 
     // If we have filled the row, reset the remaining columns to 12
@@ -33,12 +38,12 @@ const ProjectPage = ({ params }: { params: { name: string } }) => {
     }
 
     // Determine the row span for the current image
-    const rowSpan = Math.floor(Math.random() * 2) + 2; // Random row-span between 1 and 2
+    const rowSpan = randomIntFromInterval(2, 2);
 
     return {
       src: image,
       alt: `${project.title} - Image ${index + 1}`,
-      customClass: `md:col-span-${currentSpan} col-span-${currentSpan} row-span-${rowSpan}`,
+      customClass: `col-span-${colSpan} row-span-${rowSpan}`,
     };
   });
 

@@ -2,11 +2,15 @@ import React from 'react'
 import Gallery from './Gallery'
 
 const images = [
-  { src: "/images/nftFrog/01_design.jpg", alt: "Image 1", project: 'nft-frog', title: 'NFT Collection', customClass: 'md:col-span-3 md:row-span-2 col-span-3 row-span-2' },
-  { src: "/images/rapcover/01_chico_custom_rapcover.jpg", project: 'rap-cover', alt: "Image 2", customClass: 'md:col-span-4 md:row-span-5 col-span-5 row-span-3' },
-  { src: "/images/undergroundRec/01_studio_duck.jpg", project: 'underground-records', alt: "Image 3", customClass: 'md:col-span-5 md:row-span-3 col-span-3 row-span-3' },
-  { src: "/images/zany/03_logo.png", alt: "Image 3", project: 'zany', customClass: 'md:col-span-3 md:row-span-3 col-span-3 row-span-2' },
-  { src: "/images/logoJewelry/IMG_1803.jpg", project: 'logo-jewelry', alt: "Image 3", customClass: 'md:col-span-5 md:row-span-2 col-span-2 row-span-2 ' },
+  { src: "/images/loma_frogs/Face_Features.jpg", alt: "Image 1", project: 'loma_frogs', title: 'NFT Collection', customClass: 'md:col-span-3 md:row-span-2 col-span-3 row-span-2' },
+  { src: "/images/chico_rap_cover_art/Unbenanntes_Projekt.jpg", project: 'chico_rap_cover_art', alt: "Image 2", title: 'Rap cover art', customClass: 'md:col-span-4 md:row-span-5 col-span-5 row-span-3' },
+  { src: "/images/underground_records/Unbenanntes_Projekt 3.jpg", project: 'underground_records', alt: "Image 3", title: 'Underground records', customClass: 'md:col-span-5 md:row-span-3 col-span-3 row-span-3' },
+  { src: "/images/zany_gaming_studio/03_logo.PNG", alt: "Image 4", project: 'zany_gaming_studio', title: 'Gaming Studio', customClass: 'md:col-span-3 md:row-span-3 col-span-3 row-span-2' },
+  { src: "/images/logo_jewelry/IMG_1803.jpg", project: 'logo_jewelry', alt: "Image 5", title: 'Logo Jewelry', customClass: 'md:col-span-5 md:row-span-2 col-span-2 row-span-2 ' },
+  { src: "/images/character_asset_design/Unbenanntes_Projekt 5.jpg", project: 'character_asset_design', alt: "Image 6", title: 'Character/Asset Design', customClass: 'md:col-span-5 md:row-span-4 col-span-4 row-span-4 ' },
+  { src: "/images/horror/Unbenanntes_Projekt 8.jpg", project: 'horror', alt: "Image 7", title: 'Horror', customClass: 'md:col-span-7 md:row-span-2 col-span-4 row-span-2 ' },
+  { src: "/images/diner_restaurant/Unbenanntes_Projekt 3.jpg", project: 'diner_restaurant', title: 'Diner Restaurant', alt: "Image 8", customClass: 'md:col-span-4 md:row-span-2 col-span-2 row-span-2 ' },
+  { src: "/images/nft_calendar/Unbenanntes_Projekt.jpg", project: 'nft_calendar', alt: "Image 9", title: 'NFT Calendar', customClass: 'md:col-span-3 md:row-span-2 col-span-2 row-span-2 ' },
 ];
 
 function Work() {
