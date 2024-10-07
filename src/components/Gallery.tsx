@@ -98,7 +98,7 @@ const Item = forwardRef<HTMLDivElement, { image: any; onClick: () => void }>(({ 
       <Image
         src={image.src}
         alt={image.alt}
-        layout="fill"
+        fill={true}
         objectFit="cover"
         className="object-cover w-full h-full"
       />

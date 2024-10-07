@@ -52,9 +52,11 @@ const ProjectPage = ({ params }: { params: { name: string } }) => {
   }, []);
 
   let remainingCols = 12;
+  let remainingMobileCols = 8;
   const images = project.images.map((image: any, index: number) => {
     // Determine the column span for the current image
     let colSpan = randomEvenIntFromInterval(2, 6)
+    let mobileColSpan = randomEvenIntFromInterval(2, 4)
 
     
     // If the current column span exceeds the remaining columns in the row,
@@ -62,22 +64,30 @@ const ProjectPage = ({ params }: { params: { name: string } }) => {
     if (colSpan > remainingCols) {
       colSpan = remainingCols;
     }
+    if (mobileColSpan > remainingMobileCols) {
+      mobileColSpan = remainingMobileCols;
+    }
 
     // Save the current span and decrease the remaining columns
     remainingCols -= colSpan;
+    remainingMobileCols -= mobileColSpan;
 
     // If we have filled the row, reset the remaining columns to 12
     if (remainingCols <= 0) {
       remainingCols = 12;
     }
+    if (remainingMobileCols <= 0) {
+      remainingMobileCols = 8;
+    }
 
     // Determine the row span for the current image
     const rowSpan = Math.round(colSpan / image.aspectRatio / 2);
+    const mobileRowSpan = Math.round(mobileColSpan / image.aspectRatio / 2);
 
     return {
       src: image.src,
       alt: `${project.title} - Image ${index + 1}`,
-      customClass: `col-span-${colSpan} row-span-${rowSpan}`,
+      customClass: `md:col-span-${colSpan} md:row-span-${rowSpan} col-span-${mobileColSpan} row-span-${mobileRowSpan}`,
     };
   });
 
