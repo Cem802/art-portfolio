@@ -2,7 +2,7 @@ import React from 'react'
 import Gallery from './Gallery'
 
 const images = [
-  { src: "/images/nftFrog/01_design.jpg", alt: "Image 1", project: 'nft-frog', customClass: 'md:col-span-3 md:row-span-2 col-span-3 row-span-2' },
+  { src: "/images/nftFrog/01_design.jpg", alt: "Image 1", project: 'nft-frog', title: 'NFT Collection', customClass: 'md:col-span-3 md:row-span-2 col-span-3 row-span-2' },
   { src: "/images/rapcover/01_chico_custom_rapcover.jpg", project: 'rap-cover', alt: "Image 2", customClass: 'md:col-span-4 md:row-span-5 col-span-5 row-span-3' },
   { src: "/images/undergroundRec/01_studio_duck.jpg", project: 'underground-records', alt: "Image 3", customClass: 'md:col-span-5 md:row-span-3 col-span-3 row-span-3' },
   { src: "/images/zany/03_logo.png", alt: "Image 3", project: 'zany', customClass: 'md:col-span-3 md:row-span-3 col-span-3 row-span-2' },

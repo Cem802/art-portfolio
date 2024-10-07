@@ -44,9 +44,15 @@ const ProjectPage = ({ params }: { params: { name: string } }) => {
 
   return (
     <div className="p-8">
-      <div className='h-screen flex flex-col justify-center items-center'>
-        <h1 className="text-4xl font-bold mb-4">{project.title}</h1>
-        <p className="text-lg mb-8">{project.description}</p>
+      <div
+          className="absolute top-0 left-0 w-screen h-screen bg-right bg-no-repeat bg-cover"
+          style={{
+            backgroundImage: `url(${project.background})`,
+          }}
+      />
+      <div className='h-screen flex flex-col justify-center items-center z-50'>
+        <h1 className="text-4xl font-bold mb-4 z-50">{project.title}</h1>
+        <p className="text-lg mb-8 z-50">{project.description}</p>
       </div>
 
       <Gallery images={images} />

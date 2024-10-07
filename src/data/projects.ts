@@ -4,6 +4,7 @@ const projects = [
         name: 'nft-frog',
         title: 'NFT Frog Collection',
         description: 'Description of Project One',
+        background: '/images/nftFrog/09_website_banner.png',
         images: [
             '/images/nftFrog/01_design.jpg', '/images/nftFrog/01_limited_frog.jpg',
             '/images/nftFrog/01_Website_Banner.jpg', '/images/nftFrog/02_Banner.jpg',
