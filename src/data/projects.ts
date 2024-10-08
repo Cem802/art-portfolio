@@ -15,11 +15,27 @@ const projects = [
                 "aspectRatio": 1
             },
             {
+                "src": "/images/loma_frogs/23.jpg",
+                "aspectRatio": 0.46208916368369674
+            },
+            {
                 "src": "/images/loma_frogs/26.png",
                 "aspectRatio": 1
             },
             {
                 "src": "/images/loma_frogs/3.png",
+                "aspectRatio": 1
+            },
+            {
+                "src": "/images/loma_frogs/31.jpg",
+                "aspectRatio": 1
+            },
+            {
+                "src": "/images/loma_frogs/32.jpg",
+                "aspectRatio": 0.46208916368369674
+            },
+            {
+                "src": "/images/loma_frogs/33.jpg",
                 "aspectRatio": 1
             },
             {
@@ -60,10 +76,6 @@ const projects = [
             },
             {
                 "src": "/images/loma_frogs/Clothing 3.jpg",
-                "aspectRatio": 1
-            },
-            {
-                "src": "/images/loma_frogs/Clothing.jpg",
                 "aspectRatio": 1
             },
             {
@@ -131,10 +143,6 @@ const projects = [
                 "aspectRatio": 1
             },
             {
-                "src": "/images/loma_frogs/Unbenanntes_Projekt 10.jpg",
-                "aspectRatio": 0.46208916368369674
-            },
-            {
                 "src": "/images/loma_frogs/Unbenanntes_Projekt 11.jpg",
                 "aspectRatio": 0.46208916368369674
             },
@@ -171,10 +179,6 @@ const projects = [
                 "aspectRatio": 1
             },
             {
-                "src": "/images/loma_frogs/Unbenanntes_Projekt.jpg",
-                "aspectRatio": 1
-            },
-            {
                 "src": "/images/loma_frogs/Venom.jpg",
                 "aspectRatio": 1
             },
@@ -207,10 +211,6 @@ const projects = [
                 "aspectRatio": 0.46208916368369674
             },
             {
-                "src": "/images/loma_frogs/_Coming_Soon 6.jpg",
-                "aspectRatio": 0.46208916368369674
-            },
-            {
                 "src": "/images/loma_frogs/_Coming_Soon 7.jpg",
                 "aspectRatio": 0.46208916368369674
             },
@@ -226,19 +226,19 @@ const projects = [
         "description": "Description of Project Two",
         "images": [
             {
-                "src": "/images/chico_rap_cover_art/Unbenanntes_Projekt 1.jpg",
-                "aspectRatio": 1
-            },
-            {
-                "src": "/images/chico_rap_cover_art/Unbenanntes_Projekt 2.jpg",
-                "aspectRatio": 1
-            },
-            {
                 "src": "/images/chico_rap_cover_art/Unbenanntes_Projekt.jpg",
+                "aspectRatio": 1
+            },
+            {
+                "src": "/images/chico_rap_cover_art/Unbenanntes_Projekt1.jpg",
+                "aspectRatio": 1
+            },
+            {
+                "src": "/images/chico_rap_cover_art/Unbenanntes_Projekt2.jpg",
                 "aspectRatio": 1
             }
         ],
-        "background": ""
+        "background": "/images/chico_rap_cover_art/Unbenanntes_Projekt1.jpg"
     },
     {
         "name": "logo_jewelry",
@@ -282,7 +282,7 @@ const projects = [
                 "aspectRatio": 0.9870967741935484
             }
         ],
-        "background": ""
+        "background": "/images/logo_jewelry/IMG_1797.jpg"
     },
     {
         "name": "underground_records",
@@ -290,23 +290,23 @@ const projects = [
         "description": "Description of Project Two",
         "images": [
             {
-                "src": "/images/underground_records/Unbenanntes_Projekt 1.jpg",
-                "aspectRatio": 0.9411764705882353
-            },
-            {
-                "src": "/images/underground_records/Unbenanntes_Projekt 2.jpg",
-                "aspectRatio": 0.9411764705882353
-            },
-            {
-                "src": "/images/underground_records/Unbenanntes_Projekt 3.jpg",
-                "aspectRatio": 0.9411764705882353
-            },
-            {
                 "src": "/images/underground_records/Unbenanntes_Projekt.jpg",
                 "aspectRatio": 1
+            },
+            {
+                "src": "/images/underground_records/Unbenanntes_Projekt1.jpg",
+                "aspectRatio": 0.9411764705882353
+            },
+            {
+                "src": "/images/underground_records/Unbenanntes_Projekt2.jpg",
+                "aspectRatio": 0.9411764705882353
+            },
+            {
+                "src": "/images/underground_records/Unbenanntes_Projekt3.jpg",
+                "aspectRatio": 0.9411764705882353
             }
         ],
-        "background": ""
+        "background": "/images/underground_records/Unbenanntes_Projekt1.jpg"
     },
     {
         "name": "zany_gaming_studio",
@@ -390,7 +390,7 @@ const projects = [
                 "aspectRatio": 0.8
             }
         ],
-        "background": ""
+        "background": "/images/zany_gaming_studio/03_logo.PNG"
     },
     {
         "name": "character_asset_design",
@@ -398,67 +398,67 @@ const projects = [
         "description": "Description of Project Two",
         "images": [
             {
-                "src": "/images/character_asset_design/Bildschirmfoto 2023-04-27 um 17.15.59.png",
-                "aspectRatio": 0.7917282127031019
-            },
-            {
-                "src": "/images/character_asset_design/Duck_Retopology.jpg",
-                "aspectRatio": 2.1432664756446993
-            },
-            {
-                "src": "/images/character_asset_design/IMG_2154.PNG",
-                "aspectRatio": 0.8
-            },
-            {
-                "src": "/images/character_asset_design/Unbenanntes_Projekt 1 2.jpg",
-                "aspectRatio": 0.7727272727272727
-            },
-            {
-                "src": "/images/character_asset_design/Unbenanntes_Projekt 1 3.jpg",
-                "aspectRatio": 1
-            },
-            {
-                "src": "/images/character_asset_design/Unbenanntes_Projekt 1.jpg",
-                "aspectRatio": 1
-            },
-            {
-                "src": "/images/character_asset_design/Unbenanntes_Projekt 2.jpg",
+                "src": "/images/character_asset_design/01.jpg",
                 "aspectRatio": 1.4285714285714286
             },
             {
-                "src": "/images/character_asset_design/Unbenanntes_Projekt 3.jpg",
-                "aspectRatio": 1
-            },
-            {
-                "src": "/images/character_asset_design/Unbenanntes_Projekt 4.jpg",
-                "aspectRatio": 1
-            },
-            {
-                "src": "/images/character_asset_design/Unbenanntes_Projekt 5.jpg",
-                "aspectRatio": 1
-            },
-            {
-                "src": "/images/character_asset_design/Unbenanntes_Projekt 6.jpg",
-                "aspectRatio": 0.7069555302166477
-            },
-            {
-                "src": "/images/character_asset_design/Unbenanntes_Projekt 7.jpg",
-                "aspectRatio": 1
-            },
-            {
-                "src": "/images/character_asset_design/Unbenanntes_Projekt.jpg",
+                "src": "/images/character_asset_design/02.jpg",
                 "aspectRatio": 1.4316546762589928
             },
             {
-                "src": "/images/character_asset_design/Unbenanntes_Projekt99.jpg",
+                "src": "/images/character_asset_design/03.jpg",
+                "aspectRatio": 1
+            },
+            {
+                "src": "/images/character_asset_design/04.PNG",
+                "aspectRatio": 0.8
+            },
+            {
+                "src": "/images/character_asset_design/05.PNG",
+                "aspectRatio": 0.8
+            },
+            {
+                "src": "/images/character_asset_design/06.jpg",
                 "aspectRatio": 1.4285714285714286
             },
             {
-                "src": "/images/character_asset_design/Untitled_Artwork.PNG",
-                "aspectRatio": 0.8
+                "src": "/images/character_asset_design/07.jpg",
+                "aspectRatio": 1
+            },
+            {
+                "src": "/images/character_asset_design/08.jpg",
+                "aspectRatio": 1
+            },
+            {
+                "src": "/images/character_asset_design/09.png",
+                "aspectRatio": 0.7917282127031019
+            },
+            {
+                "src": "/images/character_asset_design/10.jpg",
+                "aspectRatio": 2.1432664756446993
+            },
+            {
+                "src": "/images/character_asset_design/11.jpg",
+                "aspectRatio": 0.7727272727272727
+            },
+            {
+                "src": "/images/character_asset_design/12.jpg",
+                "aspectRatio": 1
+            },
+            {
+                "src": "/images/character_asset_design/13.jpg",
+                "aspectRatio": 1
+            },
+            {
+                "src": "/images/character_asset_design/14.jpg",
+                "aspectRatio": 1
+            },
+            {
+                "src": "/images/character_asset_design/15.jpg",
+                "aspectRatio": 0.7069555302166477
             }
         ],
-        "background": ""
+        "background": "/images/character_asset_design/01.jpg"
     },
     {
         "name": "diner_restaurant",
@@ -522,7 +522,7 @@ const projects = [
                 "aspectRatio": 0.6984924623115578
             }
         ],
-        "background": ""
+        "background": "/images/diner_restaurant/Unbenanntes_Projekt3.jpg"
     },
     {
         "name": "horror",
@@ -530,43 +530,47 @@ const projects = [
         "description": "Description of Project Two",
         "images": [
             {
+                "src": "/images/horror/Bildschirmfoto.png",
+                "aspectRatio": 0.6602671118530885
+            },
+            {
                 "src": "/images/horror/TheHauntingofAbaddonDB.png",
                 "aspectRatio": 0.7497354497354497
             },
             {
-                "src": "/images/horror/Unbenanntes_Projekt 2.jpg",
+                "src": "/images/horror/Unbenanntes_Projekt.jpg",
+                "aspectRatio": 1.4316546762589928
+            },
+            {
+                "src": "/images/horror/Unbenanntes_Projekt2.jpg",
                 "aspectRatio": 1.5730050933786077
             },
             {
-                "src": "/images/horror/Unbenanntes_Projekt 3.jpg",
+                "src": "/images/horror/Unbenanntes_Projekt3.jpg",
                 "aspectRatio": 1.4285714285714286
             },
             {
-                "src": "/images/horror/Unbenanntes_Projekt 4.jpg",
+                "src": "/images/horror/Unbenanntes_Projekt4.jpg",
                 "aspectRatio": 1.4316546762589928
             },
             {
-                "src": "/images/horror/Unbenanntes_Projekt 5.jpg",
+                "src": "/images/horror/Unbenanntes_Projekt5.jpg",
                 "aspectRatio": 1.4316546762589928
             },
             {
-                "src": "/images/horror/Unbenanntes_Projekt 6.jpg",
+                "src": "/images/horror/Unbenanntes_Projekt6.jpg",
                 "aspectRatio": 1.4316546762589928
             },
             {
-                "src": "/images/horror/Unbenanntes_Projekt 7.jpg",
+                "src": "/images/horror/Unbenanntes_Projekt7.jpg",
                 "aspectRatio": 1.4316546762589928
             },
             {
-                "src": "/images/horror/Unbenanntes_Projekt 8.jpg",
+                "src": "/images/horror/Unbenanntes_Projekt8.jpg",
                 "aspectRatio": 1.4285714285714286
-            },
-            {
-                "src": "/images/horror/Unbenanntes_Projekt.jpg",
-                "aspectRatio": 1.4316546762589928
             }
         ],
-        "background": ""
+        "background": "/images/horror/Unbenanntes_Projekt8.jpg"
     },
     {
         "name": "nft_calendar",
@@ -574,35 +578,35 @@ const projects = [
         "description": "Description of Project Two",
         "images": [
             {
-                "src": "/images/nft_calendar/Unbenanntes_Projekt 1.jpg",
-                "aspectRatio": 1
-            },
-            {
-                "src": "/images/nft_calendar/Unbenanntes_Projekt 2.jpg",
-                "aspectRatio": 1
-            },
-            {
-                "src": "/images/nft_calendar/Unbenanntes_Projekt 3.jpg",
-                "aspectRatio": 1
-            },
-            {
-                "src": "/images/nft_calendar/Unbenanntes_Projekt 4.jpg",
-                "aspectRatio": 1
-            },
-            {
-                "src": "/images/nft_calendar/Unbenanntes_Projekt 5.jpg",
-                "aspectRatio": 1
-            },
-            {
-                "src": "/images/nft_calendar/Unbenanntes_Projekt 6.jpg",
-                "aspectRatio": 1
-            },
-            {
                 "src": "/images/nft_calendar/Unbenanntes_Projekt.jpg",
+                "aspectRatio": 1
+            },
+            {
+                "src": "/images/nft_calendar/Unbenanntes_Projekt1.jpg",
+                "aspectRatio": 1
+            },
+            {
+                "src": "/images/nft_calendar/Unbenanntes_Projekt2.jpg",
+                "aspectRatio": 1
+            },
+            {
+                "src": "/images/nft_calendar/Unbenanntes_Projekt3.jpg",
+                "aspectRatio": 1
+            },
+            {
+                "src": "/images/nft_calendar/Unbenanntes_Projekt4.jpg",
+                "aspectRatio": 1
+            },
+            {
+                "src": "/images/nft_calendar/Unbenanntes_Projekt5.jpg",
+                "aspectRatio": 1
+            },
+            {
+                "src": "/images/nft_calendar/Unbenanntes_Projekt6.jpg",
                 "aspectRatio": 1
             }
         ],
-        "background": ""
+        "background": "/images/nft_calendar/Unbenanntes_Projekt1.jpg"
     }
 ];
 

@@ -97,11 +97,14 @@ const ProjectPage = ({ params }: { params: { name: string } }) => {
         className="relative overflow-hidden min-h-[90vh] mb-5"
       >
         <div
-            className="absolute top-0 left-0 w-screen h-[90vh] bg-right bg-no-repeat bg-cover"
+            className="absolute top-0 left-0 w-screen h-[90vh] bg-right bg-no-repeat bg-cover blur-sm"
             ref={parallaxRef}
             style={{
               backgroundImage: `url(${project.background})`,
             }}
+        />
+        <div
+            className="absolute top-0 left-0 w-screen h-[90vh] bg-black bg-opacity-50"
         />
         <div className='h-[90vh] flex flex-col justify-center items-center p-2 z-50'>
           <h1 className="text-4xl font-bold text-center mb-4 z-50">{project.title}</h1>
