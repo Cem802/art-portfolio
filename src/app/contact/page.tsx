@@ -6,7 +6,7 @@ function Contact() {
         <div
           className="absolute top-0 left-0 w-screen h-screen bg-right bg-no-repeat bg-cover"
           style={{
-            backgroundImage: `url('/images/contactbg.jpg')`,
+            backgroundImage: `url('/assets/contactbg.jpg')`,
           }}
         />
         <div className='flex flex-col h-screen justify-center items-center p-4 z-50'>

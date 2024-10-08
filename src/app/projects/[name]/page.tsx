@@ -55,7 +55,7 @@ const ProjectPage = ({ params }: { params: { name: string } }) => {
   let remainingMobileCols = 8;
   const images = project.images.map((image: any, index: number) => {
     // Determine the column span for the current image
-    let colSpan = randomEvenIntFromInterval(2, 6)
+    let colSpan = randomEvenIntFromInterval(2, 5)
     let mobileColSpan = randomEvenIntFromInterval(2, 4)
 
     
@@ -88,6 +88,7 @@ const ProjectPage = ({ params }: { params: { name: string } }) => {
       src: image.src,
       alt: `${project.title} - Image ${index + 1}`,
       customClass: `md:col-span-${colSpan} md:row-span-${rowSpan} col-span-${mobileColSpan} row-span-${mobileRowSpan}`,
+      type: image.type
     };
   });
 
@@ -112,7 +113,7 @@ const ProjectPage = ({ params }: { params: { name: string } }) => {
         </div>
       </div>
 
-      <Gallery images={images} contain />
+      <Gallery assets={images} contain />
     </div>
   );
 };

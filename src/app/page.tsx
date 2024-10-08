@@ -31,7 +31,7 @@ export default function Home() {
           className="absolute top-0 left-0 w-screen h-screen bg-right bg-no-repeat bg-cover"
           ref={parallaxRef}
           style={{
-            backgroundImage: `url('/images/background2.png')`,
+            backgroundImage: `url('/assets/background2.png')`,
           }}
         />
         <div className="p-4">

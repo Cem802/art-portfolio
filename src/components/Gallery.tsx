@@ -4,8 +4,9 @@ import { useRouter } from 'next/navigation';
 import { useState, useEffect, useRef, ForwardedRef, forwardRef, MutableRefObject } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faClose, faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
+import { Video } from './Video';
 
-const Gallery = ({ images, contain }: { images: any, contain?: boolean }) => {
+const Gallery = ({ assets, contain }: { assets: any, contain?: boolean }) => {
   const galleryRefs = useRef<(HTMLDivElement | null)[]>([]);
 
   useEffect(() => {
@@ -49,15 +50,15 @@ const Gallery = ({ images, contain }: { images: any, contain?: boolean }) => {
     }
   };
   const showNextImage = () => {
-    if (zoomedImageIndex !== null && zoomedImageIndex < images.length - 1) {
+    if (zoomedImageIndex !== null && zoomedImageIndex < assets.length - 1) {
       setZoomedImageIndex(zoomedImageIndex + 1);
     }
   };
 
   return (
     <div className="grid gap-4 md:grid-cols-12 grid-cols-8 auto-rows-[100px] md:auto-rows-[150px]">
-      {images.map((image: any, index: number) => (
-        <Item key={index} image={image} contain={contain} onClick={() => openZoomedImage(index)} ref={(el) => {
+      {assets.map((asset: any, index: number) => (
+        <Item key={index} asset={asset} contain={contain} onClick={() => openZoomedImage(index)} ref={(el) => {
           galleryRefs.current[index] = el;
         }} />
       ))}
@@ -73,7 +74,12 @@ const Gallery = ({ images, contain }: { images: any, contain?: boolean }) => {
             <FontAwesomeIcon icon={faChevronRight} />
           </button>
           <div className='relative w-[90vw] h-[90vh]'>
-            <Image src={images[zoomedImageIndex].src} alt="zoomed-image" fill={true} objectFit="contain" className='' />
+            {assets[zoomedImageIndex].type === 'image' && (
+              <Image src={assets[zoomedImageIndex].src} alt="zoomed-image" fill={true} objectFit="contain" className='' />
+            )}
+            {assets[zoomedImageIndex].type === 'video' && (
+              <Video source={assets[zoomedImageIndex].src} />
+            )}
           </div>
         </div>
       )}
@@ -81,7 +87,7 @@ const Gallery = ({ images, contain }: { images: any, contain?: boolean }) => {
   );
 };
 
-const Item = forwardRef<HTMLDivElement, { image: any; contain: boolean | undefined; onClick: () => void }>(({ image, contain, onClick }, ref) => {
+const Item = forwardRef<HTMLDivElement, { asset: any; contain: boolean | undefined; onClick: () => void }>(({ asset, contain, onClick }, ref) => {
   const [hover, setHover] = useState(false);
   const router = useRouter();
 
@@ -89,22 +95,27 @@ const Item = forwardRef<HTMLDivElement, { image: any; contain: boolean | undefin
     <div
       ref={ref}
       className={`relative overflow-hidden cursor-pointer opacity-0 ${
-        image.customClass ? image.customClass : ''
+        asset.customClass ? asset.customClass : ''
       }`}
-      onMouseEnter={() => image.title && setHover(true)}
+      onMouseEnter={() => asset.title && setHover(true)}
       onMouseLeave={() => setHover(false)}
-      onClick={() => image.project ? router.push(`/projects/${image.project}`) : onClick()}
+      onClick={() => asset.project ? router.push(`/projects/${asset.project}`) : onClick()}
     >
-      <Image
-        src={image.src}
-        alt={image.alt}
-        fill={true}
-        objectFit={contain ? 'contain' : 'cover'}
-        className="object-cover w-full h-full"
-      />
+      {asset.type === 'image' && (
+        <Image
+          src={asset.src}
+          alt={asset.alt}
+          fill={true}
+          objectFit={contain ? 'contain' : 'cover'}
+          className="object-cover w-full h-full"
+        />
+      )}
+      {asset.type === 'video' && (
+        <Video source={asset.src} />
+      )}
       {hover && (
         <div className='absolute w-full h-full p-4 bg-black bg-opacity-80 flex justify-center items-center'>
-          <h1 className="text-white text-2xl font-bold">{image.title}</h1>
+          <h1 className="text-white text-2xl font-bold">{asset.title}</h1>
         </div>
       )}
     </div>
