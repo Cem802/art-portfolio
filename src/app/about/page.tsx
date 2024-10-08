@@ -10,7 +10,7 @@ function About() {
             </div>
             <div className='text-white w-3/4'>
                 <h1 className='text-4xl'>About Me</h1>
-                <p className='text-lg'>I am a digital artist who specializes in creating unique designs and illustrations. I have a passion for creating art that is both visually appealing and thought-provoking. My work is inspired by nature, technology, and the world around me. I strive to create art that is both beautiful and meaningful, and I am always looking for new ways to push the boundaries of my creativity.</p>
+                <p className='text-lg'>I'm a 22-year-old digital artist with a passion for transforming imagination into visuals. Whether it’s crafting striking concert art, sleek logo design, or building unique characters, I love to explore the boundaries of creativity. My work thrives on bold color palettes and inventive design that bring ideas to life.</p>
             </div>
         </div>
     </div>

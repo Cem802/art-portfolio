@@ -105,7 +105,7 @@ const ProjectPage = ({ params }: { params: { name: string } }) => {
         />
         <div className='h-[90vh] flex flex-col justify-center items-center z-50'>
           <h1 className="text-4xl font-bold mb-4 z-50">{project.title}</h1>
-          <p className="text-lg mb-8 z-50">{project.description}</p>
+          {/* <p className="text-lg mb-8 z-50">{project.description}</p> */}
         </div>
       </div>
 

@@ -238,11 +238,11 @@ const projects = [
                 "aspectRatio": 1
             }
         ],
-        "background": "/images/chico_rap_cover_art/Unbenanntes_Projekt 1.jpg"
+        "background": ""
     },
     {
         "name": "logo_jewelry",
-        "title": "Logo Jewelry",
+        "title": "Jewelry Logo Design",
         "description": "Description of Project Two",
         "images": [
             {
@@ -282,11 +282,11 @@ const projects = [
                 "aspectRatio": 0.9870967741935484
             }
         ],
-        "background": "/images/logo_jewelry/IMG_1797.jpg"
+        "background": ""
     },
     {
         "name": "underground_records",
-        "title": "Underground Records",
+        "title": "Underground Records Posters",
         "description": "Description of Project Two",
         "images": [
             {
@@ -306,11 +306,11 @@ const projects = [
                 "aspectRatio": 1
             }
         ],
-        "background": "/images/underground_records/Unbenanntes_Projekt 1.jpg"
+        "background": ""
     },
     {
         "name": "zany_gaming_studio",
-        "title": "Zany",
+        "title": "Zany Gaming Studio",
         "description": "Description of Project Two",
         "images": [
             {
@@ -390,7 +390,7 @@ const projects = [
                 "aspectRatio": 0.8
             }
         ],
-        "background": "/images/zany_gaming_studio/010_merch.PNG"
+        "background": ""
     },
     {
         "name": "character_asset_design",
@@ -458,11 +458,11 @@ const projects = [
                 "aspectRatio": 0.8
             }
         ],
-        "background": "/images/character_asset_design/Bildschirmfoto 2023-04-27 um 17.15.59.png"
+        "background": ""
     },
     {
         "name": "diner_restaurant",
-        "title": "Diner Restaurant",
+        "title": "American Diner Merchandise",
         "description": "Description of Project Two",
         "images": [
             {
@@ -522,11 +522,11 @@ const projects = [
                 "aspectRatio": 0.6984924623115578
             }
         ],
-        "background": "/images/diner_restaurant/IMG_2707.jpg"
+        "background": ""
     },
     {
         "name": "horror",
-        "title": "Horror",
+        "title": "Abaddon Horror Project",
         "description": "Description of Project Two",
         "images": [
             {
@@ -566,11 +566,11 @@ const projects = [
                 "aspectRatio": 1.4316546762589928
             }
         ],
-        "background": "/images/horror/TheHauntingofAbaddonDB.png"
+        "background": ""
     },
     {
         "name": "nft_calendar",
-        "title": "NFT Calender",
+        "title": "NFT Calender Logo Design",
         "description": "Description of Project Two",
         "images": [
             {
@@ -602,7 +602,7 @@ const projects = [
                 "aspectRatio": 1
             }
         ],
-        "background": "/images/nft_calendar/Unbenanntes_Projekt 1.jpg"
+        "background": ""
     }
 ];
 
