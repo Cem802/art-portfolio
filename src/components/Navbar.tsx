@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram } from '@fortawesome/free-brands-svg-icons';
-import { faBars, faClose } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faClose, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 
@@ -56,17 +56,27 @@ const Navbar = () => {
                             <p className={`text-white hover:text-[#9FCC2E] ${isActive('/contact') ? 'border-b-2 border-[#9FCC2E]' : ''}`}>CONTACT</p>
                         </Link>
                     </li>
-                    <li className='md:hidden'>
+                    {/* <li className='md:hidden'>
                         <a href="https://www.instagram.com/aresaiart" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#9FCC2E]">
                             <FontAwesomeIcon icon={faInstagram} size='xl' />
+                        </a>
+                    </li> */}
+                    <li className='md:hidden'>
+                        <a href="mailto:sera.kirciltepeli@gmail.com" className="text-white hover:text-[#9FCC2E]">
+                            <FontAwesomeIcon icon={faEnvelope} size='xl' />
                         </a>
                     </li>
                 </ul>
             </div>
             <ul className='hidden md:block z-50'>
-                <li>
+                {/* <li>
                     <a href="https://www.instagram.com/aresaiart" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#9FCC2E]">
                         <FontAwesomeIcon icon={faInstagram} size='2x' />
+                    </a>
+                </li> */}
+                <li>
+                    <a href="mailto:sera.kirciltepeli@gmail.com" className="text-white hover:text-[#9FCC2E]">
+                        <FontAwesomeIcon icon={faEnvelope} size='2x' />
                     </a>
                 </li>
             </ul>
