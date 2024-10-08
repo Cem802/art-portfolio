@@ -450,6 +450,10 @@ const projects = [
                 "aspectRatio": 1.4316546762589928
             },
             {
+                "src": "/images/character_asset_design/Unbenanntes_Projekt99.jpg",
+                "aspectRatio": 1.4285714285714286
+            },
+            {
                 "src": "/images/character_asset_design/Untitled_Artwork.PNG",
                 "aspectRatio": 0.8
             }

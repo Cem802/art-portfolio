@@ -109,7 +109,7 @@ const ProjectPage = ({ params }: { params: { name: string } }) => {
         </div>
       </div>
 
-      <Gallery images={images} />
+      <Gallery images={images} contain />
     </div>
   );
 };

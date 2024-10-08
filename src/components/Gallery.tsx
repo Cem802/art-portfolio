@@ -5,7 +5,7 @@ import { useState, useEffect, useRef, ForwardedRef, forwardRef, MutableRefObject
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faClose, faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 
-const Gallery = ({ images }: { images: any }) => {
+const Gallery = ({ images, contain }: { images: any, contain?: boolean }) => {
   const galleryRefs = useRef<(HTMLDivElement | null)[]>([]);
 
   useEffect(() => {
@@ -57,7 +57,7 @@ const Gallery = ({ images }: { images: any }) => {
   return (
     <div className="grid gap-4 md:grid-cols-12 grid-cols-8 auto-rows-[100px] md:auto-rows-[150px]">
       {images.map((image: any, index: number) => (
-        <Item key={index} image={image} onClick={() => openZoomedImage(index)} ref={(el) => {
+        <Item key={index} image={image} contain={contain} onClick={() => openZoomedImage(index)} ref={(el) => {
           galleryRefs.current[index] = el;
         }} />
       ))}
@@ -81,7 +81,7 @@ const Gallery = ({ images }: { images: any }) => {
   );
 };
 
-const Item = forwardRef<HTMLDivElement, { image: any; onClick: () => void }>(({ image, onClick }, ref) => {
+const Item = forwardRef<HTMLDivElement, { image: any; contain: boolean | undefined; onClick: () => void }>(({ image, contain, onClick }, ref) => {
   const [hover, setHover] = useState(false);
   const router = useRouter();
 
@@ -99,7 +99,7 @@ const Item = forwardRef<HTMLDivElement, { image: any; onClick: () => void }>(({ 
         src={image.src}
         alt={image.alt}
         fill={true}
-        objectFit="cover"
+        objectFit={contain ? 'contain' : 'cover'}
         className="object-cover w-full h-full"
       />
       {hover && (
