@@ -22,7 +22,7 @@ const Navbar = () => {
         <div className="container mx-auto flex items-center justify-between">
             <div className="text-2xl font-bold z-50">
                 <Link href="/">
-                    <Image src="/images/logo4.png" alt="logo" width={100} height={100} />
+                    <Image src="/assets/logo4.png" alt="logo" width={100} height={100} />
                 </Link>
             </div>
             <div className='relative z-50'>
